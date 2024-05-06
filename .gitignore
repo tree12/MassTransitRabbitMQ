@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/Consummer/bin/Debug/net8.0
+/Consummer/obj
+/Producer/bin/Debug/net8.0
+/Producer/obj
+/SharedModels/bin/Debug/net8.0
+/SharedModels/obj
+/Subscriber/bin/Debug/net8.0
+/Subscriber/obj
