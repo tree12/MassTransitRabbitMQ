@@ -1,6 +1,8 @@
-﻿namespace Producer.Dtos
+﻿using SharedModels;
+
+namespace Producer.Data
 {
-    public class OrderDto
+    public class Purchase: IPurchaseCreated
     {
         public int Id { get; set; }
         public string ProductName { get; set; }

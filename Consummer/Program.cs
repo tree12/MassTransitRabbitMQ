@@ -2,8 +2,8 @@
 using Consummer;
 var busControl = Bus.Factory.CreateUsingRabbitMq(cfg =>
 {
-    cfg.ReceiveEndpoint("order-create-event", e => {
-        e.Consumer<OrderCreatedConsummer>();
+    cfg.ReceiveEndpoint("purchase-create-event", e => {
+        e.Consumer<PurchaseCreatedConsummer>();
     });
 });
 await busControl.StartAsync(new CancellationToken());

@@ -7,13 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Service\**" />
-    <Content Remove="Service\**" />
-    <EmbeddedResource Remove="Service\**" />
-    <None Remove="Service\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="MassTransit" Version="8.2.2" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.2.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />

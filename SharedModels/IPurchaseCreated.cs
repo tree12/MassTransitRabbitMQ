@@ -1,6 +1,6 @@
 ﻿namespace SharedModels
 {
-    public interface IOrderCreated
+    public interface IPurchaseCreated
     {
         int Id { get; set; }
         string ProductName { get; set; }

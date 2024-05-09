@@ -16,12 +16,12 @@ namespace Producer.RabbitMQ
         {
 
             using var channel = _connection.Connection.CreateModel();
-            channel.QueueDeclare("orders", exclusive: false);
+            channel.QueueDeclare("purchases", exclusive: false);
 
             var json = JsonConvert.SerializeObject(message);
             var body = Encoding.UTF8.GetBytes(json);
 
-            channel.BasicPublish(exchange: "", routingKey: "orders", body: body);
+            channel.BasicPublish(exchange: "", routingKey: "purchases", body: body);
         }
     }
 }
